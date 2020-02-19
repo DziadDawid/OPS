@@ -34,15 +34,13 @@
           </div>
           <br />
           <div class="btnLayout">
-            <div class="problemBtn">
-              <div class="problemBtnOutline">
-                <input
-                  type="button"
-                  name="sendProblem"
-                  id="sendProblem"
-                  value="Problem?"
-                />
-              </div>
+            <div class="problemBtn" onclick="dick()">
+              <input
+                type="button"
+                name="sendProblem"
+                id="sendProblem"
+                value="Problem?"
+              />
             </div>
             <div class="loginBtn">
               <input
@@ -62,5 +60,10 @@
         document.write(new Date().getFullYear());
       </script>
     </div>
+    <script>
+      function dick() {
+        console.log("dick");
+      }
+    </script>
   </body>
 </html>

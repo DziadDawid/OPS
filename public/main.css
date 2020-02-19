@@ -3,26 +3,15 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   background-color: #ffee7e;
-  /* flex-flow: row wrap; */
 }
 
 .sectionLayout {
   display: flex;
   padding-left: 300px;
-  /* padding-left: 20%; */
   padding-top: 250px;
-  /* padding-top: 20%; */
   padding-right: 10px;
   flex-wrap: wrap;
-  /* width: auto; */
-  /* height: auto; */
 }
-
-/* #footerContainer {
-    flex: 1;
-    height: 100%;
-    width: 100%;
-} */
 
 #footer {
   position: fixed;
@@ -77,17 +66,24 @@ body {
   width: 150px;
   color: #ffee7e;
   font-size: 20px;
-  border-top-left-radius: 50px;
   cursor: pointer;
-  /* position: relative; */
+  position: relative;
 }
 
-.problemBtnOutline {
-  /* flex: 1; */
-  border-top-left-radius: 50px;
-  border: 3px #ff7e7e solid;
-  /* transform: translate(10px, 10px); */
-  /* position: absolute; */
+.problemBtn::after {
+  content: "";
+  position: absolute;
+  margin-left: -145px;
+  margin-top: -5px;
+  width: 150px;
+  height: 39px;
+  border: 2px solid #ff7e7e;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.problemBtn:hover::after {
+  transform: translate(-10px, 10px);
 }
 
 .loginBtn input {
@@ -99,6 +95,24 @@ body {
   width: 150px;
   color: #ffee7e;
   font-size: 20px;
-  border-bottom-right-radius: 50px;
   cursor: pointer;
+  position: relative;
+}
+
+.loginBtn::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 39px;
+  margin-left: -145px;
+  margin-top: -5px;
+  border: 2px solid #ff7e7e;
+  cursor: pointer;
+  pointer-events: none;
+  background: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.loginBtn:hover::after {
+  transform: translate(-10px, 10px);
 }
