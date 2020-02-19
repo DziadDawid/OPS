@@ -116,3 +116,95 @@ body {
 .loginBtn:hover::after {
   transform: translate(-10px, 10px);
 }
+
+/* ----------------- "RESPONSIVE" -----------------*/
+
+@media (max-width: 1060px) {
+  .sectionLayout {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+
+  .logo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .LPlabel input {
+    font-size: 20px;
+    width: 333px;
+    height: 50px;
+  }
+
+  .problemBtn input {
+    font-size: 14px;
+    width: 130px;
+  }
+
+  .problemBtn::after {
+    height: 32px;
+    width: 130px;
+    margin-left: -125px;
+  }
+
+  .loginBtn input {
+    font-size: 14px;
+    width: 130px;
+  }
+
+  .loginBtn::after {
+    height: 32px;
+    width: 130px;
+    margin-left: -125px;
+  }
+
+  #footer {
+    font-size: 20px;
+    width: 222px;
+  }
+}
+
+@media (max-width: 500px) {
+  .LPlabel input {
+    font-size: 20px;
+    width: 280px;
+    height: 50px;
+  }
+
+  .problemBtn input {
+    font-size: 14px;
+    width: 130px;
+  }
+
+  .problemBtn::after {
+    height: 32px;
+    width: 130px;
+    margin-left: -125px;
+  }
+
+  .loginBtn input {
+    font-size: 14px;
+    width: 130px;
+  }
+
+  .loginBtn::after {
+    height: 32px;
+    width: 130px;
+    margin-left: -125px;
+  }
+
+  #footer {
+    font-size: 14px;
+    width: 150px;
+  }
+}
