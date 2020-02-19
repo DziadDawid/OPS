@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./public/images/logo.png" />
+    <link rel="stylesheet" href="./public/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Okti private server</title>
+  </head>
+
+  <body>
+    <div class="sectionLayout">
+      <div class="logo">
+        <img src="./public/images/logo.png" alt="logo" width="150" />
+      </div>
+
+      <div class="form">
+        <form action="/">
+          <div class="LPlabel">
+            <input type="text" name="email" placeholder="email" />
+          </div>
+          <br />
+          <div class="LPlabel">
+            <input
+              type="password"
+              name="email"
+              placeholder="password"
+              style="border-top-right-radius: 0px; border-bottom-left-radius: 50px;"
+            />
+          </div>
+          <br />
+          <div class="btnLayout">
+            <div class="problemBtn">
+              <div class="problemBtnOutline">
+                <input
+                  type="button"
+                  name="sendProblem"
+                  id="sendProblem"
+                  value="Problem?"
+                />
+              </div>
+            </div>
+            <div class="loginBtn">
+              <input
+                type="submit"
+                name="submitLogin"
+                id="submitLogin"
+                value="Login"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="footer">
+      Dawid Foltyński @
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </div>
+  </body>
+</html>
