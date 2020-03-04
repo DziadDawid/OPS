@@ -1,0 +1,40 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='shortcut icon' href='/images/logo.png')
+  link(rel='stylesheet' href='css/main.css')
+  link(href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet')
+  title Okti private server
+.sectionLayout
+  .logo
+    img(src='images/logo.png' alt='logo' width='150')
+  .form
+    form(action='/' method="POST")
+      .LPlabel
+        input(type='text' name='email' placeholder='email' value=validated ? validated.email : '')
+        if (errors && errors.email)
+            .alert #{errors.email.msg}
+      br
+      .LPlabel
+        input(type='password' name='password' placeholder='password' style='border-top-right-radius: 0px; border-bottom-left-radius: 50px;' value=validated ? validated.password : '')
+        if (errors && errors.password)
+            .alert #{errors.password.msg}
+      br
+      .btnLayout
+        .problemBtn(onclick='dick()')
+          input#sendProblem(type='button' name='sendProblem' value='Problem?')
+        .loginBtn
+          input#submitLogin(type='submit' name='submitLogin' value='Login')
+
+    if (formMessage.length)
+        .alert #{formMessage}
+    
+#footer
+  | Dawid Folty&nacute;ski @
+  script.
+    document.write(new Date().getFullYear());
+script.
+  function dick() {
+  console.log("dick");
+  }
